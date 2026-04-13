@@ -3,58 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodLogistic S.A. - Nova Web Corporativa</title>
+    <title>FoodLogistic S.A. - Web Corporativa</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- SEO i meta info -->
-    <meta name="description" content="Proposta de nova pàgina corporativa per FoodLogistic S.A. Desenvolupada com a prova funcional.">
+    <!-- META -->
+    <meta name="description" content="Nova pàgina corporativa de FoodLogistic S.A., empresa líder en logística alimentària. Solucions 24/7.">
 </head>
 
 <body>
 
-    <header>
-        <h1>FoodLogistic S.A.</h1>
-        <h2>Solucions Logístiques per al Sector Alimentari</h2>
+    <!-- HERO HEADER -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">FoodLogistic S.A.</h1>
+            <p class="fade-in delay-1">Experts en logística alimentària i distribució 24/7</p>
+            <a href="#serveis" class="btn fade-in delay-2">Descobreix els nostres serveis</a>
+        </div>
     </header>
 
-    <nav>
+    <!-- MENÚ -->
+    <nav class="navbar">
         <ul>
-            <li><a href="#">Inici</a></li>
-            <li><a href="#serveis">Serveis</a></li>
-            <li><a href="#empresa">La nostra empresa</a></li>
+            <li></li>
+            <li></li>
             <li><a href="#contacte">Contacte</a></li>
         </ul>
     </nav>
 
-    <section id="presentacio">
-        <h2>Benvinguts a la nova identitat digital</h2>
-        <p>Aquesta és la proposta funcional de la futura pàgina corporativa per FoodLogistic S.A., amb un disseny actual i adaptable.</p>
+    <!-- SERVEIS -->
+    <section id="serveis" class="section">
+        <h2>Serveis Principals</h2>
+
+        <div class="cards">
+            <div class="card slide-up">
+                img
+                <h3>Transport en Fred</h3>
+                <p>Control total de temperatura per garantir la qualitat alimentària.</p>
+            </div>
+
+            <div class="card slide-up delay-1">
+                img
+                <h3>Magatzematge</h3>
+                <p>Centres logístics adaptats al sector alimentari.</p>
+            </div>
+
+            <div class="card slide-up delay-2">
+                img
+                <h3>Distribució 24/7</h3>
+                <p>Servei urgent i planificat durant tot l’any.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="serveis">
-        <h2>Serveis</h2>
-        <ul>
-            <li>Transport i logística del sector alimentari</li>
-            <li>Control de fred i traçabilitat</li>
-            <li>Magatzems i distribució</li>
-            <li>Servei urgent 24/7</li>
-        </ul>
+    <!-- SOBRE L’EMPRESA -->
+    <section id="empresa" class="section glass">
+        <h2>Sobre FoodLogistic S.A.</h2>
+        <p>Amb més de 20 anys d'experiència en logística alimentària, FoodLogistic S.A. combina innovació, control i rapidesa per assegurar que els aliments arribin en perfectes condicions.</p>
     </section>
 
-    <section id="empresa">
-        <h2>Sobre nosaltres</h2>
-        <p>FoodLogistic S.A. és líder al sector de la logística alimentària amb més de 20 anys d'experiència.</p>
-    </section>
-
-    <section id="contacte">
+    <!-- CONTACTE -->
+    <section id="contacte" class="section">
         <h2>Contacte</h2>
-        <p>Email: info@foodlogistic.com</p>
-        <p>Tel: 93 000 00 00</p>
+
+        <div class="contact-info">
+            <p>Email: info@foodlogistic.com</p>
+            <p>Telèfon: 93 000 00 00</p>
+            <p>Ubicació: Polígon Industrial Les Hortes - Mataró</p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 FoodLogistic S.A. | Proposta de desenvolupament web</p>
+        <p>© 2026 FoodLogistic S.A. | Disseny web de prova</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
