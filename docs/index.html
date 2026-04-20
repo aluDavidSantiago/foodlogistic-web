@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodLogístic S.A. | Logística alimentària</title>
 
-    <meta name="description"
-          content="FoodLogístic S.A. - Empresa líder en logística i distribució alimentària a nivell nacional">
+    <meta name="description" content="FoodLogístic S.A. - Logística, seguretat i protecció de dades">
 
-    <!-- Fonts -->
+    <!-- Fonts (CORRECTO) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- CSS (CORRECTO) -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,109 +21,98 @@
 <header class="hero">
     <div class="overlay"></div>
 
-    <nav class="nav">
-        <img src="images/FoodLogisticLogo.png" alt="FoodLogístic Logo">
+    <nav class="nav reveal">
+        <img src="images/FoodLogisticLogo.png" alt="FoodLogistic logo">
 
         <div class="links">
             <a href="#inici">Inici</a>
             <a href="#serveis">Serveis</a>
-            <a href="#videos">Formació RGPD</a>
-            <a href="#contacte" class="cta">Contacte</a>
+            <a href="#formacio">Protecció de dades</a>
+            <a href="#contacte">Contacte</a>
         </div>
     </nav>
 
     <div class="hero-content">
-        <h1>
+        <h1 class="reveal">
             Logística alimentària<br>
             <span>d’alta fiabilitat</span>
         </h1>
 
-        <p>
-            Distribució nacional, seguretat operativa i continuïtat del servei
-            per a empreses del sector alimentari.
+        <p class="reveal delay-1">
+            Distribució nacional, seguretat operativa i continuïtat del servei.
         </p>
 
-        <a href="#videos" class="hero-btn">Veure formació RGPD</a>
+        <a href="#formacio" class="hero-btn reveal delay-2">
+            Explorar formació RGPD
+        </a>
     </div>
 </header>
 
 <main>
 
-<section id="inici" class="section reveal">
-    <h2>Qui som</h2>
-    <p>
+<section id="inici" class="section">
+    <h2 class="reveal">Qui som</h2>
+    <p class="reveal delay-1">
         FoodLogístic S.A. és una empresa especialitzada en la logística i distribució
-        alimentària a nivell nacional. Apostem per la tecnologia, la seguretat i
-        l’eficiència com a pilars del nostre servei.
+        alimentària a nivell nacional.
     </p>
 </section>
 
-<section id="serveis" class="section services reveal">
-    <h2>Serveis</h2>
+<section id="serveis" class="section services">
+    <h2 class="reveal">Serveis</h2>
 
     <div class="service-grid">
-        <div class="service-box">
+        <div class="service-box reveal delay-1">
             <h3>Distribució Nacional</h3>
-            <p>Gestió eficient de rutes i entregues arreu del territori.</p>
+            <p>Gestió eficient de rutes.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box reveal delay-2">
             <h3>Logística Alimentària</h3>
-            <p>Processos adaptats als requisits del sector i compliment normatiu.</p>
+            <p>Compliment normatiu.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box reveal delay-3">
             <h3>Alta Fiabilitat</h3>
-            <p>Continuïtat operativa garantida per a serveis crítics.</p>
+            <p>Continuïtat operativa.</p>
         </div>
     </div>
 </section>
 
-<!-- ========================= -->
-<!--   FORMACION PROTECCION    -->
-<!--        DE DATOS           -->
-<!-- ========================= -->
-<section id="videos" class="video-section reveal">
-    <h2>Dades Segures, Logística Eficient</h2>
+<!-- ================= FORMACION RGPD ================= -->
+<section id="formacio" class="experience">
+    <h2 class="reveal">Dades Segures, Logística Eficient</h2>
 
-    <p class="video-intro">
-        En el marc de la campanya interna de sensibilització, FoodLogístic proporciona
-        els següents videotutorials formatius per garantir el compliment de la
-        normativa de protecció de dades (LOPD-GDD i RGPD) en el dia a dia.
+    <p class="exp-sub reveal delay-1">
+        Formació audiovisual interna (RGPD i LOPD-GDD).
     </p>
 
-    <div class="video-grid">
+    <div class="exp-grid">
 
-        <!-- VIDEO 1 -->
-        <div class="video-card">
-            <h3>Compliment legal en el dia a dia</h3>
-            <p class="video-desc">
-                Vídeo formatiu general dirigit a tot el personal: magatzem,
-                transport i oficines. S’hi expliquen els conceptes bàsics de
-                protecció de dades i les bones pràctiques operatives.
-            </p>
+        <div class="exp-card reveal">
+            <div class="exp-text">
+                <span class="tag blue">GENERAL</span>
+                <h3>Compliment legal en el dia a dia</h3>
+                <p>Bones pràctiques per a tot el personal.</p>
+            </div>
 
-            <div class="video-wrapper">
-                <video controls preload="metadata" playsinline>
+            <div class="exp-video">
+                <video controls preload="metadata">
                     <source src="videos/FoodLogistic-Proteccion-de-datos1.mp4" type="video/mp4">
-                    El teu navegador no suporta vídeo HTML5.
                 </video>
             </div>
         </div>
 
-        <!-- VIDEO 2 -->
-        <div class="video-card">
-            <h3>Protecció de dades a RRHH i Gestió</h3>
-            <p class="video-desc">
-                Vídeo específic per a personal d’administració i Recursos Humans.
-                Tracta la gestió del currículum, la confidencialitat, els rols de
-                tractament i els drets ARSULIPO.
-            </p>
+        <div class="exp-card reverse reveal delay-1">
+            <div class="exp-text">
+                <span class="tag green">RRHH</span>
+                <h3>Protecció de dades a RRHH</h3>
+                <p>CV, confidencialitat i drets ARSULIPO.</p>
+            </div>
 
-            <div class="video-wrapper">
-                <video controls preload="metadata" playsinline>
+            <div class="exp-video">
+                <video controls preload="metadata">
                     <source src="videos/FoodLogistic-Proteccion-de-datos2.mp4" type="video/mp4">
-                    El teu navegador no suporta vídeo HTML5.
                 </video>
             </div>
         </div>
@@ -132,42 +120,48 @@
     </div>
 </section>
 
-<section id="contacte" class="section reveal">
-    <h2>Contacte</h2>
+<section id="contacte" class="section">
+    <h2 class="reveal">Contacte</h2>
 
-    <form class="contact-form">
+    <form class="contact-form reveal delay-1">
         <input type="text" placeholder="Nom" required>
         <input type="email" placeholder="Correu electrònic" required>
-        <input type="tel" placeholder="Telèfon">
-        <textarea rows="4" placeholder="Missatge" required></textarea>
-
-        <p class="legal">
-            Les dades introduïdes no seran emmagatzemades ni tractades.
-        </p>
-
+        <textarea rows="4" placeholder="Missatge"></textarea>
         <button type="submit">Enviar</button>
     </form>
 </section>
 
 </main>
 
-<footer>
-    © FoodLogístic S.A. · Mataró · +34 935 55 55 55
+<footer class="reveal">
+    © FoodLogístic S.A. · Mataró
 </footer>
 
-<script>
-const reveals = document.querySelectorAll('.reveal');
+<!-- ================= STATCOUNTER (NO TOCADO) ================= -->
+<script type="text/javascript">
+var sc_project=13221931; 
+var sc_invisible=1; 
+var sc_security="6282e6a5"; 
+</script>
+<script src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+<div class="statcounter">
+<a href="https://statcounter.com/">
+<img src="https://c.statcounter.com/13221931/0/6282e6a5/1/" alt="Statcounter">
+</a>
+</div>
+</noscript>
+<!-- ========================================================== -->
 
-window.addEventListener('scroll', () => {
-    reveals.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 120) {
-            el.classList.add('active');
-        }
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
     });
-});
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 
 </body>
 </html>
-``
