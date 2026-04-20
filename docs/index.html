@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodLogístic S.A. | Logística alimentària</title>
-    <meta name="description" content="FoodLogístic S.A. - Empresa líder en logística i distribució alimentària a nivell nacional">
+
+    <meta name="description"
+          content="FoodLogístic S.A. - Empresa líder en logística i distribució alimentària a nivell nacional">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,18 +24,27 @@
 
     <nav class="nav">
         <img src="images/FoodLogisticLogo.png" alt="FoodLogístic Logo">
+
         <div class="links">
             <a href="#inici">Inici</a>
             <a href="#serveis">Serveis</a>
-            <a href="#empresa">Empresa</a>
+            <a href="#videos">Formació RGPD</a>
             <a href="#contacte" class="cta">Contacte</a>
         </div>
     </nav>
 
     <div class="hero-content">
-        <h1>Logística alimentària<br><span>d’alta fiabilitat</span></h1>
-        <p>Distribució nacional, seguretat operativa i continuïtat del servei per a empreses del sector alimentari.</p>
-        <a href="#contacte" class="hero-btn">Parlem</a>
+        <h1>
+            Logística alimentària<br>
+            <span>d’alta fiabilitat</span>
+        </h1>
+
+        <p>
+            Distribució nacional, seguretat operativa i continuïtat del servei
+            per a empreses del sector alimentari.
+        </p>
+
+        <a href="#videos" class="hero-btn">Veure formació RGPD</a>
     </div>
 </header>
 
@@ -42,12 +53,13 @@
 <section id="inici" class="section reveal">
     <h2>Qui som</h2>
     <p>
-        FoodLogístic S.A. és una empresa especialitzada en la logística i distribució alimentària a nivell nacional.
-        Apostem per la tecnologia, la seguretat i l’eficiència com a pilars del nostre servei.
+        FoodLogístic S.A. és una empresa especialitzada en la logística i distribució
+        alimentària a nivell nacional. Apostem per la tecnologia, la seguretat i
+        l’eficiència com a pilars del nostre servei.
     </p>
 </section>
 
-<section id="serveis" class="section services">
+<section id="serveis" class="section services reveal">
     <h2>Serveis</h2>
 
     <div class="service-grid">
@@ -68,16 +80,56 @@
     </div>
 </section>
 
-<section id="empresa" class="section split reveal">
-    <div>
-        <h2>Empresa</h2>
-        <p>
-            Amb seu a Mataró i operativa a nivell nacional, FoodLogístic S.A. compta amb un equip especialitzat
-            i una infraestructura preparada per garantir un servei estable i segur.
-        </p>
-    </div>
+<!-- ========================= -->
+<!--   FORMACION PROTECCION    -->
+<!--        DE DATOS           -->
+<!-- ========================= -->
+<section id="videos" class="video-section reveal">
+    <h2>Dades Segures, Logística Eficient</h2>
 
-    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80" alt="Warehouse">
+    <p class="video-intro">
+        En el marc de la campanya interna de sensibilització, FoodLogístic proporciona
+        els següents videotutorials formatius per garantir el compliment de la
+        normativa de protecció de dades (LOPD-GDD i RGPD) en el dia a dia.
+    </p>
+
+    <div class="video-grid">
+
+        <!-- VIDEO 1 -->
+        <div class="video-card">
+            <h3>Compliment legal en el dia a dia</h3>
+            <p class="video-desc">
+                Vídeo formatiu general dirigit a tot el personal: magatzem,
+                transport i oficines. S’hi expliquen els conceptes bàsics de
+                protecció de dades i les bones pràctiques operatives.
+            </p>
+
+            <div class="video-wrapper">
+                <video controls preload="metadata" playsinline>
+                    <source src="videos/FoodLogistic-Proteccion-de-datos1.mp4" type="video/mp4">
+                    El teu navegador no suporta vídeo HTML5.
+                </video>
+            </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="video-card">
+            <h3>Protecció de dades a RRHH i Gestió</h3>
+            <p class="video-desc">
+                Vídeo específic per a personal d’administració i Recursos Humans.
+                Tracta la gestió del currículum, la confidencialitat, els rols de
+                tractament i els drets ARSULIPO.
+            </p>
+
+            <div class="video-wrapper">
+                <video controls preload="metadata" playsinline>
+                    <source src="videos/FoodLogistic-Proteccion-de-datos2.mp4" type="video/mp4">
+                    El teu navegador no suporta vídeo HTML5.
+                </video>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section id="contacte" class="section reveal">
@@ -103,33 +155,13 @@
     © FoodLogístic S.A. · Mataró · +34 935 55 55 55
 </footer>
 
-<!-- ========================= -->
-<!--     STATCOUNTER CODE      -->
-<!-- ========================= -->
-<!-- Default Statcounter code for footlogistic
-https://aludavidsantiago.github.io/foodlogistic-web/ -->
-<script type="text/javascript">
-var sc_project=13221931; 
-var sc_invisible=1; 
-var sc_security="6282e6a5"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13221931/0/6282e6a5/1/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
-
 <script>
 const reveals = document.querySelectorAll('.reveal');
+
 window.addEventListener('scroll', () => {
     reveals.forEach(el => {
         const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
+        if (top < window.innerHeight - 120) {
             el.classList.add('active');
         }
     });
@@ -138,3 +170,4 @@ window.addEventListener('scroll', () => {
 
 </body>
 </html>
+``
