@@ -23,7 +23,6 @@
 
     <nav class="nav reveal">
         <img src="images/FoodLogisticLogo.png" alt="FoodLogístic logo">
-
         <div class="links">
             <a href="#inici">Inici</a>
             <a href="#serveis">Serveis</a>
@@ -53,25 +52,21 @@
 <section id="inici" class="section">
     <h2 class="reveal">Qui som</h2>
     <p class="reveal delay-1">
-        FoodLogístic S.A. és una empresa especialitzada en la logística
-        i distribució alimentària a nivell nacional.
+        FoodLogístic S.A. és una empresa especialitzada en la logística i distribució alimentària a nivell nacional.
     </p>
 </section>
 
-<section id="serveis" class="section services">
+<section id="serveis" class="section">
     <h2 class="reveal">Serveis</h2>
-
     <div class="service-grid">
         <div class="service-box reveal delay-1">
             <h3>Distribució Nacional</h3>
             <p>Gestió eficient de rutes.</p>
         </div>
-
         <div class="service-box reveal delay-2">
             <h3>Logística Alimentària</h3>
             <p>Compliment normatiu.</p>
         </div>
-
         <div class="service-box reveal delay-3">
             <h3>Alta Fiabilitat</h3>
             <p>Continuïtat operativa.</p>
@@ -82,19 +77,14 @@
 <section id="formacio" class="experience">
     <h2 class="reveal">Dades Segures, Logística Eficient</h2>
 
-    <p class="exp-sub reveal delay-1">
-        Formació audiovisual interna (RGPD i LOPDGDD).
-    </p>
-
     <div class="exp-grid">
 
         <div class="exp-card reveal">
             <div class="exp-text">
                 <span class="tag blue">GENERAL</span>
-                <h3>Compliment legal en el dia a dia</h3>
+                <h3>Compliment legal</h3>
                 <p>Bones pràctiques per a tot el personal.</p>
             </div>
-
             <div class="exp-video">
                 <video controls preload="metadata">
                     <source src="videos/FoodLogistic-Proteccion-de-datos1.mp4" type="video/mp4">
@@ -108,7 +98,6 @@
                 <h3>Protecció de dades a RRHH</h3>
                 <p>CV, confidencialitat i drets ARSULIPO.</p>
             </div>
-
             <div class="exp-video">
                 <video controls preload="metadata">
                     <source src="videos/FoodLogistic-Proteccion-de-datos2.mp4" type="video/mp4">
@@ -121,7 +110,6 @@
 
 <section id="contacte" class="section">
     <h2 class="reveal">Contacte</h2>
-
     <form class="contact-form reveal delay-1">
         <input type="text" placeholder="Nom" required>
         <input type="email" placeholder="Correu electrònic" required>
@@ -136,39 +124,37 @@
     © FoodLogístic S.A. · Mataró
 </footer>
 
-<!-- ================= COOKIE CONSENT (RGPD OK) ================= -->
+<!-- ===== COOKIE CONSENT SCRIPT (OBLIGATORIO) ===== -->
+<script src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"></script>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  cookieconsent.run({
-    notice_banner_type: "headline",
-    consent_type: "express",
-    palette: "custom",
-    language: "es",
-    page_load_consent_levels: ["strictly-necessary"],
-    notice_banner_reject_button_hide: false,
-    preferences_center_close_button_hide: false,
-    website_name: "FoodLogístic S.A."
-  });
+    cookieconsent.run({
+        notice_banner_type: "headline",
+        consent_type: "express",
+        palette: "custom",
+        language: "es",
+        page_load_consent_levels: ["strictly-necessary"],
+        notice_banner_reject_button_hide: false,
+        website_name: "FoodLogístic S.A."
+    });
 });
 </script>
 
-<!-- ================= STATCOUNTER (CONDICIONADO) ================= -->
+<!-- ===== STATCOUNTER (SOLO CON CONSENTIMIENTO) ===== -->
 <script type="text/plain" data-cookie-consent="analytics">
     var sc_project = 13221931;
     var sc_invisible = 1;
     var sc_security = "6282e6a5";
 </script>
-<script type="text/plain"
-        data-cookie-consent="analytics"
+<script type="text/plain" data-cookie-consent="analytics"
         src="https://www.statcounter.com/counter/counter.js"></script>
 
-<!-- ================= REVEAL ANIMATION ================= -->
+<!-- ===== ANIMACIONES ===== -->
 <script>
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('active');
     });
 }, { threshold: 0.2 });
 
@@ -177,3 +163,4 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 </body>
 </html>
+``
