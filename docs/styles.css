@@ -1,3 +1,4 @@
+/* ================= VARIABLES ================= */
 :root {
     --bg: #0b0f1a;
     --card: #131a2a;
@@ -6,6 +7,7 @@
     --text: #e5e7eb;
 }
 
+/* ================= RESET ================= */
 * {
     box-sizing: border-box;
 }
@@ -36,6 +38,7 @@ body {
     justify-content: space-between;
     padding: 25px 60px;
     position: relative;
+    z-index: 2;
 }
 
 .nav img {
@@ -46,6 +49,7 @@ body {
     color: white;
     margin-left: 25px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 /* ================= HERO TEXT ================= */
@@ -54,11 +58,13 @@ body {
     margin: 170px auto;
     padding: 0 40px;
     position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3.6rem;
+    line-height: 1.1;
 }
 
 .hero-content span {
@@ -67,6 +73,7 @@ body {
 
 .hero-btn {
     display: inline-block;
+    margin-top: 25px;
     background: var(--blue);
     color: black;
     padding: 14px 30px;
@@ -102,7 +109,6 @@ h2 {
     background: var(--card);
     padding: 35px;
     border-radius: 18px;
-<<<<<<< HEAD
     transition: transform .4s ease, box-shadow .4s ease;
 }
 
@@ -111,9 +117,9 @@ h2 {
     box-shadow: 0 20px 40px rgba(0,194,255,.2);
 }
 
-/* ================= EXPERIENCE (VIDEOS) ================= */
+/* ================= EXPERIENCE ================= */
 .experience {
-    padding: 10px 20px;
+    padding: 40px 20px;
     background: linear-gradient(180deg, #060a13, #0b0f1a);
 }
 
@@ -154,13 +160,8 @@ h2 {
     color: black;
 }
 
-.tag.blue {
-    background: var(--blue);
-}
-
-.tag.green {
-    background: var(--green);
-}
+.tag.blue { background: var(--blue); }
+.tag.green { background: var(--green); }
 
 .exp-video video {
     width: 100%;
@@ -168,64 +169,6 @@ h2 {
     background: black;
     box-shadow: 0 20px 60px rgba(0,0,0,.55);
     transition: transform .4s ease;
-=======
-    transition: transform .4s, box-shadow .4s;
-}
-
-.service-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,194,255,.2);
-}
-
-/* VIDEO SECTION */
-.video-section {
-    background: linear-gradient(180deg, #0b0f1a 0%, #131a2a 100%);
-    padding: 90px 50px;
-    border-radius: 40px;
-}
-
-.video-intro {
-    max-width: 800px;
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    margin-bottom: 60px;
-}
-
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    gap: 60px;
-}
-
-.video-card {
-    background: #0e1528;
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 25px 60px rgba(0,0,0,.5);
-}
-
-.video-card h3 {
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 15px;
-}
-
-.video-desc {
-    font-size: 1rem;
-    color: #cbd5e1;
-    margin-bottom: 25px;
-}
-
-.video-wrapper {
-    border-radius: 18px;
-    overflow: hidden;
-    background: black;
-    border: 1px solid rgba(0,194,255,.25);
-}
-
-.video-wrapper video {
-    width: 100%;
-    display: block;
->>>>>>> e6407434cf5c29b922c6135e851a8815cc624385
 }
 
 .exp-video video:hover {
@@ -234,7 +177,7 @@ h2 {
 
 /* ================= CONTACT ================= */
 .contact-form {
-    max-width: 1000px;
+    max-width: 700px;
 }
 
 input,
@@ -244,15 +187,17 @@ textarea {
     border-radius: 10px;
     border: none;
     margin-bottom: 18px;
+    font-family: inherit;
 }
 
 button {
-    width: 10%;
+    width: 160px;
     background: var(--blue);
     border: none;
     padding: 14px;
     border-radius: 30px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* ================= FOOTER ================= */
@@ -262,7 +207,7 @@ footer {
     background: black;
 }
 
-/* ================= ANIMATIONS ================= */
+/* ================= SCROLL ANIMATIONS ================= */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -271,33 +216,12 @@ footer {
 
 .reveal.active {
     opacity: 1;
-<<<<<<< HEAD
     transform: none;
 }
 
-.fade-left {
-    transform: translateX(60px);
-}
-
-.fade-right {
-    transform: translateX(-60px);
-}
-
-.scale-in {
-    transform: scale(.9);
-}
-
-.delay-1 {
-    transition-delay: .2s;
-}
-
-.delay-2 {
-    transition-delay: .4s;
-}
-
-.delay-3 {
-    transition-delay: .6s;
-}
+.delay-1 { transition-delay: .2s; }
+.delay-2 { transition-delay: .4s; }
+.delay-3 { transition-delay: .6s; }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
@@ -306,11 +230,76 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .exp-text {
-        max-width: 100%;
+    .hero-content h1 {
+        font-size: 2.6rem;
     }
 }
-=======
-    transform: translateY(0);
+
+/* ========================================================= */
+/* =============== COOKIE CONSENT (CUSTOM) ================= */
+/* ========================================================= */
+
+#cc-main {
+    font-family: 'Inter', sans-serif;
 }
->>>>>>> e6407434cf5c29b922c6135e851a8815cc624385
+
+/* Banner */
+.cc-window {
+    background: #0b0f1a !important;
+    color: #e5e7eb !important;
+    border-radius: 18px !important;
+    border: 1px solid rgba(0,194,255,.25);
+    box-shadow: 0 20px 60px rgba(0,0,0,.7);
+    padding: 22px 26px !important;
+}
+
+/* Texto */
+.cc-window .cc-message {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #cbd5e1;
+}
+
+/* Botón ACEPTAR */
+.cc-btn.cc-allow {
+    background-color: var(--blue) !important;
+    color: #000 !important;
+    border-radius: 30px !important;
+    font-weight: 600;
+    padding: 10px 18px !important;
+}
+
+/* Botón RECHAZAR */
+.cc-btn.cc-deny {
+    background-color: transparent !important;
+    color: #e5e7eb !important;
+    border: 1px solid #334155 !important;
+    border-radius: 30px !important;
+    padding: 10px 18px !important;
+}
+
+/* Botón PREFERENCIAS */
+.cc-btn.cc-settings {
+    background: transparent !important;
+    color: var(--blue) !important;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Hover */
+.cc-btn:hover {
+    opacity: 0.9;
+}
+
+/* Centro de preferencias */
+.cc-settings-window {
+    background: #0b0f1a !important;
+    color: #e5e7eb !important;
+    border-radius: 22px !important;
+    box-shadow: 0 30px 80px rgba(0,0,0,.8);
+}
+
+/* Toggles */
+.cc-switch input:checked + .cc-slider {
+    background-color: var(--blue) !important;
+}

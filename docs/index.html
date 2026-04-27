@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodLogístic S.A. | Logística alimentària</title>
 
+    <title>FoodLogístic S.A. | Logística alimentària</title>
     <meta name="description" content="FoodLogístic S.A. - Logística, seguretat i protecció de dades">
 
-    <!-- Fonts (CORRECTO) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- CSS (CORRECTO) -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,7 +22,7 @@
     <div class="overlay"></div>
 
     <nav class="nav reveal">
-        <img src="images/FoodLogisticLogo.png" alt="FoodLogistic logo">
+        <img src="images/FoodLogisticLogo.png" alt="FoodLogístic logo">
 
         <div class="links">
             <a href="#inici">Inici</a>
@@ -53,8 +53,8 @@
 <section id="inici" class="section">
     <h2 class="reveal">Qui som</h2>
     <p class="reveal delay-1">
-        FoodLogístic S.A. és una empresa especialitzada en la logística i distribució
-        alimentària a nivell nacional.
+        FoodLogístic S.A. és una empresa especialitzada en la logística
+        i distribució alimentària a nivell nacional.
     </p>
 </section>
 
@@ -79,12 +79,11 @@
     </div>
 </section>
 
-<!-- ================= FORMACION RGPD ================= -->
 <section id="formacio" class="experience">
     <h2 class="reveal">Dades Segures, Logística Eficient</h2>
 
     <p class="exp-sub reveal delay-1">
-        Formació audiovisual interna (RGPD i LOPD-GDD).
+        Formació audiovisual interna (RGPD i LOPDGDD).
     </p>
 
     <div class="exp-grid">
@@ -137,26 +136,39 @@
     © FoodLogístic S.A. · Mataró
 </footer>
 
-<!-- ================= STATCOUNTER (NO TOCADO) ================= -->
-<script type="text/javascript">
-var sc_project=13221931; 
-var sc_invisible=1; 
-var sc_security="6282e6a5"; 
+<!-- ================= COOKIE CONSENT (RGPD OK) ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  cookieconsent.run({
+    notice_banner_type: "headline",
+    consent_type: "express",
+    palette: "custom",
+    language: "es",
+    page_load_consent_levels: ["strictly-necessary"],
+    notice_banner_reject_button_hide: false,
+    preferences_center_close_button_hide: false,
+    website_name: "FoodLogístic S.A."
+  });
+});
 </script>
-<script src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript>
-<div class="statcounter">
-<a href="https://statcounter.com/">
-<img src="https://c.statcounter.com/13221931/0/6282e6a5/1/" alt="Statcounter">
-</a>
-</div>
-</noscript>
-<!-- ========================================================== -->
 
+<!-- ================= STATCOUNTER (CONDICIONADO) ================= -->
+<script type="text/plain" data-cookie-consent="analytics">
+    var sc_project = 13221931;
+    var sc_invisible = 1;
+    var sc_security = "6282e6a5";
+</script>
+<script type="text/plain"
+        data-cookie-consent="analytics"
+        src="https://www.statcounter.com/counter/counter.js"></script>
+
+<!-- ================= REVEAL ANIMATION ================= -->
 <script>
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('active');
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
     });
 }, { threshold: 0.2 });
 
